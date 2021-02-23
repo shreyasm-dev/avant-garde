@@ -28,6 +28,7 @@
     "eslint-plugin-prefer-arrow": "^1.2.3"
   },
   "dependencies": {
-    "core-js": "^3.9.0"
+    "core-js": "^3.9.0",
+    "json-colorizer": "^2.2.2"
   }
 }
