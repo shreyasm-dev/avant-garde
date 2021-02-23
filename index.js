@@ -6,7 +6,7 @@ const console = {
   /**
    * Pretty-print, highlight, and log some JSON to the console
    * @param {*} json - Content to convert to JSON and log
-   * @param {int} indentation - How many spaces should be used for indentation
+   * @param {int} [indentation=2] - How many spaces should be used for indentation
    */
 
   json: (json, indentation = 2) => {
