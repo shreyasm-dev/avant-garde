@@ -1,7 +1,7 @@
 {
   "name": "avant-garde",
   "version": "0.0.1",
-  "description": "A newer, better console",
+  "description": "A newer, better, console",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
