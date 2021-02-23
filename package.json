@@ -1,6 +1,6 @@
 {
   "name": "avant-garde",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A newer, better, console",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,9 @@
     "url": "git+https://github.com/shreyasm-dev/avant-garde.git"
   },
   "keywords": [
-    "neoteric",
+    "avant-garde",
+    "avant",
+    "garde",
     "console"
   ],
   "author": "shreyasm-dev",
