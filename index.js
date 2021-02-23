@@ -26,6 +26,13 @@ const console = {
   },
 
   /**
+   * Semantic way of printing a newline character to stdout
+   * @param {int} [repeat=1] - How many new lines should be printed
+   */
+
+  newline: (repeat = 1) => process.stdout.write('\n'.repeat(repeat)),
+
+  /**
    * Print a progress bar
    * @param {int} [percentage=100] - Progress bar percentage
    * @param {string} [character='\u2588'] - Character used in progress bar
