@@ -10,6 +10,17 @@
         "ecmaVersion": 12,
         "sourceType": "module"
     },
-    "rules": {
-    }
+    "plugins": [
+			"prefer-arrow"
+		],
+		"rules": {
+			"prefer-arrow/prefer-arrow-functions": [
+				"warn",
+				{
+					"disallowPrototype": true,
+					"singleReturnOnly": false,
+					"classPropertiesAllowed": false
+				}
+			]
+		}
 }
