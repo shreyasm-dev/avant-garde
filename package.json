@@ -1,0 +1,24 @@
+{
+  "name": "avant-garde",
+  "version": "0.0.1",
+  "description": "A newer, better console",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyasm-dev/avant-garde.git"
+  },
+  "keywords": [
+    "neoteric",
+    "console"
+  ],
+  "author": "shreyasm-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shreyasm-dev/avant-garde/issues"
+  },
+  "homepage": "https://github.com/shreyasm-dev/avant-garde#readme",
+  "type": "module"
+}
