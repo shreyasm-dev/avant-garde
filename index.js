@@ -13,10 +13,10 @@ const console = {
 
   /**
    * Play an animation asynchronously
-   * @param {array<string>} frames - Array of frames to play
-   * @param {int} intervalTime - How many milliseconds each frame should be shown for
+   * @param {array.<string>} frames - Array of frames to play
+   * @param {number} intervalTime - How many milliseconds each frame should be shown for
    * @param {animationCallback} callback - Function to run after the current frame is shown
-   * @returns {int}
+   * @returns {number}
    */
 
   animation: (frames, intervalTime = 1, callback = () => true) => {
@@ -38,7 +38,7 @@ const console = {
   /**
    * Pretty-print, highlight, and log some JSON to the console
    * @param {*} json - Content to convert to JSON and log
-   * @param {int} [indentation=2] - How many spaces should be used for indentation
+   * @param {number} [indentation=2] - How many spaces should be used for indentation
    * @returns {string}
    */
 
@@ -60,16 +60,16 @@ const console = {
 
   /**
    * Semantic way of printing a newline character to stdout
-   * @param {int} [repeat=1] - How many new lines should be printed
+   * @param {number} [repeat=1] - How many new lines should be printed
    */
 
   newline: (repeat = 1) => process.stdout.write('\n'.repeat(repeat)),
 
   /**
    * Print a progress bar
-   * @param {int} [percentage=100] - Progress bar percentage
+   * @param {number} [percentage=100] - Progress bar percentage
    * @param {string} [character='\u2588'] - Character used in progress bar
-   * @param {int} [columns=process.stdout.columns]
+   * @param {number} [columns=process.stdout.columns]
    * @returns {string}
    */
 

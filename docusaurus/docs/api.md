@@ -38,10 +38,10 @@ Play an animation asynchronously
 ### Parameters
 
 -   `frames` **[array][15]&lt;[string][16]>** Array of frames to play
--   `intervalTime` **int** How many milliseconds each frame should be shown for (optional, default `1`)
--   `callback` **[animationCallback][17]** Function to run after the current frame is shown (optional, default `()=>true`)
+-   `intervalTime` **[number][17]** How many milliseconds each frame should be shown for (optional, default `1`)
+-   `callback` **[animationCallback][18]** Function to run after the current frame is shown (optional, default `()=>true`)
 
-Returns **int** 
+Returns **[number][17]** 
 
 ## json
 
@@ -50,7 +50,7 @@ Pretty-print, highlight, and log some JSON to the console
 ### Parameters
 
 -   `json` **any** Content to convert to JSON and log
--   `indentation` **int** How many spaces should be used for indentation (optional, default `2`)
+-   `indentation` **[number][17]** How many spaces should be used for indentation (optional, default `2`)
 
 Returns **[string][16]** 
 
@@ -70,7 +70,7 @@ Semantic way of printing a newline character to stdout
 
 ### Parameters
 
--   `repeat` **int** How many new lines should be printed (optional, default `1`)
+-   `repeat` **[number][17]** How many new lines should be printed (optional, default `1`)
 
 ## progress
 
@@ -78,9 +78,9 @@ Print a progress bar
 
 ### Parameters
 
--   `percentage` **int** Progress bar percentage (optional, default `100`)
+-   `percentage` **[number][17]** Progress bar percentage (optional, default `100`)
 -   `character` **[string][16]** Character used in progress bar (optional, default `'\u2588'`)
--   `columns` **int**  (optional, default `process.stdout.columns`)
+-   `columns` **[number][17]**  (optional, default `process.stdout.columns`)
 
 Returns **[string][16]** 
 
@@ -116,4 +116,6 @@ Returns **[string][16]**
 
 [16]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
-[17]: #animationcallback
+[17]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+[18]: #animationcallback
