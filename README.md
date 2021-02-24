@@ -14,4 +14,4 @@ Installation:
 npm i avant-garde
 ```
 
-You can find the docs at [https://shreyasm-dev.github.io/avant-garde]
+You can find the docs at https://shreyasm-dev.github.io/avant-garde
