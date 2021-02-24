@@ -1,4 +1,4 @@
-# Avant Garde
+# Avant-garde
 
 A newer, better, console
 
