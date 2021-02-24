@@ -1,7 +1,36 @@
 import 'core-js';
 import colorize from 'json-colorizer';
 
+/**
+ * If the value returned is falsy, the animation will stop playing
+ * @callback animationCallback
+ * @param {int} iteration - Iteration number
+ * @returns {boolean}
+ */
+
 const console = {
+
+  /**
+   * Play an animation asynchronously
+   * @param {array<string>} frames - Array of frames to play
+   * @param {int} intervalTime - How many milliseconds each frame should be shown for
+   * @param {animationCallback} callback - Function to run after the current frame is shown
+   */
+
+  animation: (frames, intervalTime = 1, callback = () => true) => {
+    let iteration = 0;
+
+    const interval = setInterval(() => {
+      console.log(`${frames[iteration % frames.length]}\r`);
+
+      if (!callback(iteration)) {
+        console.log('');
+        clearInterval(interval);
+      }
+
+      iteration++;
+    }, intervalTime);
+  },
 
   /**
    * Pretty-print, highlight, and log some JSON to the console
