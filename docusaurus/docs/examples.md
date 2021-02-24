@@ -53,3 +53,13 @@ console.log('Hello,', 'World!') // Output: Hello, World!
 // Semantic way of printing a new line
 console.newline()
 ```
+
+### `console.progress()`
+
+```javascript
+console.progress(
+  35, // Percentage
+  '=', // Character used in progress bar
+  100, // Number of columns the progress bar should take at 100% (default is full width of the terminal)
+)
+```
