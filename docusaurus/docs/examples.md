@@ -37,21 +37,21 @@ console.json( // Pretty-print and syntax highlight some JSON
     c: 3,
   },
   2, // Indentation size
-)
+);
 ```
 
 ### `console.log`
 
 ```javascript
 // Same as regular console.log except for the fact that the function returns what it logs
-console.log('Hello,', 'World!') // Output: Hello, World!
+console.log('Hello,', 'World!'); // Output: Hello, World!
 ```
 
 ### `console.newline()`
 
 ```javascript
 // Semantic way of printing a new line
-console.newline()
+console.newline();
 ```
 
 ### `console.progress()`
@@ -61,5 +61,7 @@ console.progress(
   35, // Percentage
   '=', // Character used in progress bar
   100, // Number of columns the progress bar should take at 100% (default is full width of the terminal)
-)
+);
+
+console.newline(); // A new line has to printed later to avoid the progress bar being erased
 ```
