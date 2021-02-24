@@ -1,5 +1,6 @@
 import 'core-js';
 import colorize from 'json-colorizer';
+import logUpdate from 'log-update';
 
 /**
  * If the value returned is falsy, the animation will stop playing
@@ -21,10 +22,9 @@ const console = {
     let iteration = 0;
 
     const interval = setInterval(() => {
-      console.log(`${frames[iteration % frames.length]}\r`);
+      logUpdate(frames[iteration % frames.length]);
 
       if (!callback(iteration)) {
-        console.log('');
         clearInterval(interval);
       }
 

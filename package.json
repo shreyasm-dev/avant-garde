@@ -1,6 +1,6 @@
 {
   "name": "avant-garde",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "A newer, better, console",
   "main": "index.js",
   "scripts": {
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "core-js": "^3.9.0",
-    "json-colorizer": "^2.2.2"
+    "json-colorizer": "^2.2.2",
+    "log-update": "^4.0.0"
   }
 }
