@@ -38,3 +38,4 @@ console.json( // Pretty-print and syntax highlight some JSON
   },
   2, // Indentation size
 )
+```
