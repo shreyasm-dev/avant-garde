@@ -1,5 +1,5 @@
 module.exports = {
-  someSidebar: {
+  sidebar: {
     'More Resources': ['api', 'community'],
   },
 };
