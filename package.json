@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "docs": "documentation build index.js -f md -o ./docusaurus/docs/api.md && printf '%s\n%s' '---\nid: api\ntitle: API\n---' \"$(cat ./docusaurus/docs/api.md)\" > ./docusaurus/docs/api.md",
-    "start": "cd docusaurus && npm start && cd .."
+    "start": "cd docusaurus && npm start && cd ..",
+    "build": "cd docusaurus && npm run build && mv ./build ../ && cd .. && mv build docs"
   },
   "repository": {
     "type": "git",
