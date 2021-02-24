@@ -2,7 +2,7 @@ module.exports = {
   title: 'Avant-garde',
   tagline: 'A better, newer, console',
   url: 'https://shreyasm-dev.github.io/avant-garde',
-  baseUrl: '/',
+  baseUrl: '/avant-garde/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
