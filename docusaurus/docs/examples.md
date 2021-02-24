@@ -39,3 +39,10 @@ console.json( // Pretty-print and syntax highlight some JSON
   2, // Indentation size
 )
 ```
+
+### `console.log`
+
+```javascript
+// Same as regular console.log except for the fact that the function returns what it logs
+console.log('Hello,', 'World!') // Output: Hello, World!
+```
