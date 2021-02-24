@@ -1,5 +1,6 @@
 module.exports = {
   sidebar: {
-    'More Resources': ['api', 'community'],
+    'Getting Started': ['about', 'installation', 'usage'],
+    'More Resources': ['api', 'community', 'examples'],
   },
 };
