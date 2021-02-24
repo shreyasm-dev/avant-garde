@@ -46,3 +46,10 @@ console.json( // Pretty-print and syntax highlight some JSON
 // Same as regular console.log except for the fact that the function returns what it logs
 console.log('Hello,', 'World!') // Output: Hello, World!
 ```
+
+### `console.newline()`
+
+```javascript
+// Semantic way of printing a new line
+console.newline()
+```
