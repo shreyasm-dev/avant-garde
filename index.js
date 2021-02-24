@@ -30,6 +30,8 @@ const console = {
 
       iteration++;
     }, intervalTime);
+
+    return interval;
   },
 
   /**
