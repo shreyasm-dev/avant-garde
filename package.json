@@ -1,6 +1,6 @@
 {
   "name": "avant-garde",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "A newer, better, console",
   "main": "index.js",
   "scripts": {
