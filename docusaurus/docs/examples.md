@@ -6,7 +6,7 @@ title: Examples
 ### `console.animation`
 
 ```javascript
-console.animation(
+console.animation( // Play an animation
   [ // Animation frames
     '-',
     '--',
@@ -26,3 +26,15 @@ console.animation(
   (iteration) => iteration !== 10, // If a falsy value is returned, the animation will stop
 );
 ```
+
+### `console.json`
+
+```javascript
+console.json( // Pretty-print and syntax highlight some JSON
+  {
+    a: 1,
+    b: 2,
+    c: 3,
+  },
+  2, // Indentation size
+)
