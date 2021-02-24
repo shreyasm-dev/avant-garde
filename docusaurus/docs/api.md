@@ -41,6 +41,8 @@ Play an animation asynchronously
 -   `intervalTime` **int** How many milliseconds each frame should be shown for (optional, default `1`)
 -   `callback` **[animationCallback][17]** Function to run after the current frame is shown (optional, default `()=>true`)
 
+Returns **int** 
+
 ## json
 
 Pretty-print, highlight, and log some JSON to the console
@@ -49,6 +51,8 @@ Pretty-print, highlight, and log some JSON to the console
 
 -   `json` **any** Content to convert to JSON and log
 -   `indentation` **int** How many spaces should be used for indentation (optional, default `2`)
+
+Returns **[string][16]** 
 
 ## log
 
@@ -77,6 +81,8 @@ Print a progress bar
 -   `percentage` **int** Progress bar percentage (optional, default `100`)
 -   `character` **[string][16]** Character used in progress bar (optional, default `'\u2588'`)
 -   `columns` **int**  (optional, default `process.stdout.columns`)
+
+Returns **[string][16]** 
 
 [1]: #animationcallback
 
