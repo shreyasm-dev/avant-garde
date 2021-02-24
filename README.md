@@ -2,9 +2,9 @@
 
 A newer, better, console
 
-<div style='text-align: center'>
+<p style='text-align: center'>
   <img src='./docusaurus/static/img/logo.svg' alt='Avant-garde Logo' width='150px'>
-</div>
+</p>
 
 ---
 
