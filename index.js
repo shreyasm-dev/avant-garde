@@ -35,6 +35,20 @@ const console = {
     return interval;
   },
 
+  cursor: {
+    /**
+     * Hide the cursor
+     */
+
+    hide: () => process.stdout.write('\x1B[?25l'),
+
+    /**
+     * Show the cursor
+     */
+
+    show: () => process.stdout.write('\x1B[?25h'),
+  },
+
   /**
    * Pretty-print, highlight, and log some JSON to the console
    * @param {*} json - Content to convert to JSON and log
