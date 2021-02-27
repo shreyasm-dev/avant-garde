@@ -30,7 +30,7 @@ const features = [
     imageUrl: '/docs/img/undraw_community.svg',
     description: (
       <>
-        You can reach out to us at [GitHub](https://github.com/shreyasm-dev/avant-garde) for help
+        You can reach out to us at <a href='(https://github.com/shreyasm-dev/avant-garde)'>GitHub</a> for help
       </>
     ),
   },
