@@ -27,6 +27,21 @@ console.animation( // Play an animation
 );
 ```
 
+### `console.cursor`
+
+#### `console.cursor.hide()`
+
+```javascript
+console.cursor.hide(); // Hide the cursor
+```
+
+#### `console.cursor.show()`
+
+```javascript
+// Recommended, but unnecessary since the cursor will automatically be restored when the process exits (or crashes)
+console.cursor.show(); // Show the cursor
+```
+
 ### `console.json`
 
 ```javascript
