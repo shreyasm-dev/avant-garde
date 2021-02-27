@@ -35,6 +35,10 @@ const console = {
     return interval;
   },
 
+  /**
+   * Cursor control
+   */
+
   cursor: {
     /**
      * Hide the cursor
