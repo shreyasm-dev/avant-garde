@@ -37,6 +37,7 @@
   "dependencies": {
     "core-js": "^3.9.0",
     "json-colorizer": "^2.2.2",
-    "log-update": "^4.0.0"
+    "log-update": "^4.0.0",
+    "restore-cursor": "^3.1.0"
   }
 }

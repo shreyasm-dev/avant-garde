@@ -1,6 +1,9 @@
 import 'core-js';
 import colorize from 'json-colorizer';
+import restoreCursor from 'restore-cursor';
 import logUpdate from 'log-update';
+
+restoreCursor();
 
 /**
  * If the value returned is falsy, the animation will stop playing
