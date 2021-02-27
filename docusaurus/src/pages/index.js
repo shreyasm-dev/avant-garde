@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Well Maintained',
-    imageUrl: 'img/undraw_clean_up.svg',
+    imageUrl: '/docs/img/undraw_clean_up.svg',
     description: (
       <>
         This project has almost-daily commits and regular bug-fixes
@@ -18,7 +18,7 @@ const features = [
   },
   {
     title: 'Easy to Contribute to',
-    imageUrl: 'img/undraw_contribute.svg',
+    imageUrl: '/docs/img/undraw_contribute.svg',
     description: (
       <>
         We have JS style guidelines and contributing guidelines that make it easy to code
@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: 'Friendly Community',
-    imageUrl: 'img/undraw_community.svg',
+    imageUrl: '/docs/img/undraw_community.svg',
     description: (
       <>
         You can reach out to us at [GitHub](https://github.com/shreyasm-dev/avant-garde) for help
