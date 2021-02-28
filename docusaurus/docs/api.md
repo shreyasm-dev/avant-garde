@@ -33,8 +33,9 @@ Type: [Function][18]
 ### Parameters
 
 -   `iteration` **int** Iteration number
+-   `frame` **[string][19]** Frame printed
 
-Returns **[boolean][19]** 
+Returns **[boolean][20]** 
 
 ## animation
 
@@ -42,9 +43,10 @@ Play an animation asynchronously
 
 ### Parameters
 
--   `frames` **[array][20]&lt;[string][21]>** Array of frames to play
+-   `frames` **[array][21]&lt;[string][19]>** Array of frames to play
 -   `intervalTime` **[number][22]** How many milliseconds each frame should be shown for (optional, default `1`)
 -   `callback` **[animationCallback][23]** Function to run after the current frame is shown (optional, default `()=>true`)
+-   `clear` **[boolean][20]** Clear the animation after it's done playing (optional, default `false`)
 
 Returns **[number][22]** 
 
@@ -69,7 +71,7 @@ Pretty-print, highlight, and log some JSON to the console
 -   `json` **any** Content to convert to JSON and log
 -   `indentation` **[number][22]** How many spaces should be used for indentation (optional, default `2`)
 
-Returns **[string][21]** 
+Returns **[string][19]** 
 
 ## log
 
@@ -77,9 +79,9 @@ Log a string to the console
 
 ### Parameters
 
--   `content` **...[string][21]** The content to log to the console
+-   `content` **...[string][19]** The content to log to the console
 
-Returns **[string][21]** 
+Returns **[string][19]** 
 
 ## newline
 
@@ -96,10 +98,10 @@ Print a progress bar
 ### Parameters
 
 -   `percentage` **[number][22]** Progress bar percentage (optional, default `100`)
--   `character` **[string][21]** Character used in progress bar (optional, default `'\u2588'`)
+-   `character` **[string][19]** Character used in progress bar (optional, default `'\u2588'`)
 -   `columns` **[number][22]**  (optional, default `process.stdout.columns`)
 
-Returns **[string][21]** 
+Returns **[string][19]** 
 
 ## timestamp
 
@@ -107,9 +109,9 @@ Log to the console with a timestamp
 
 ### Parameters
 
--   `on` **[Boolean][19]** Truthy or falsy value that determines if the timestamp will be logged
+-   `on` **[boolean][20]** Truthy or falsy value that determines if the timestamp will be logged
 
-Returns **[Boolean][19]** 
+Returns **[boolean][20]** 
 
 [1]: #animationcallback
 
@@ -147,11 +149,11 @@ Returns **[Boolean][19]**
 
 [18]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
 
-[19]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[19]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
-[20]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[20]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
-[21]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[21]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 [22]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
