@@ -21,10 +21,11 @@ const console = {
    * @param {array.<string>} frames - Array of frames to play
    * @param {number} intervalTime - How many milliseconds each frame should be shown for
    * @param {animationCallback} callback - Function to run after the current frame is shown
+   * @param {boolean} clear - Clear the animation after it's done playing
    * @returns {number}
    */
 
-  animation: (frames, intervalTime = 1, callback = () => true) => {
+  animation: (frames, intervalTime = 1, callback = () => true, clear = false) => {
     let iteration = 0;
 
     const interval = setInterval(() => {
@@ -32,6 +33,9 @@ const console = {
 
       if (!callback(iteration)) {
         clearInterval(interval);
+        if (clear) {
+          logUpdate.clear();
+        }
       }
 
       iteration++;
@@ -103,8 +107,8 @@ const console = {
 
   /**
    * Log to the console with a timestamp
-   * @param {Boolean} on - Truthy or falsy value that determines if the timestamp will be logged
-   * @returns {Boolean}
+   * @param {boolean} on - Truthy or falsy value that determines if the timestamp will be logged
+   * @returns {boolean}
    */
 
   timestamp: (on) => {
