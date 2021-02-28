@@ -4,7 +4,7 @@
   "description": "A newer, better, console",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "lint": "eslint .",
     "docs": "documentation build index.js -f md -o ./docusaurus/docs/api.md && printf '%s\n%s' '---\nid: api\ntitle: API\n---' \"$(cat ./docusaurus/docs/api.md)\" > ./docusaurus/docs/api.md",
     "start": "cd docusaurus && npm start && cd ..",
@@ -32,7 +32,8 @@
     "eslint": "^7.20.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prefer-arrow": "^1.2.3"
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "mocha": "^8.3.0"
   },
   "dependencies": {
     "core-js": "^3.9.0",
