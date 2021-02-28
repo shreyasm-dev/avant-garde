@@ -80,3 +80,12 @@ console.progress(
 
 console.newline(); // A new line has to printed later to avoid the progress bar being erased
 ```
+
+### `console.timestamp`
+
+```javascript
+console.timestamp(true);
+console.log('Timestamp');
+console.timestamp(false);
+console.log('No timestamp');
+```
