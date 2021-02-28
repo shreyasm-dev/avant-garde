@@ -14,6 +14,7 @@ restoreCursor();
  */
 
 let timestamp = false;
+let cursorHidden = false;
 
 const console = {
 
@@ -54,13 +55,25 @@ const console = {
      * Hide the cursor
      */
 
-    hide: () => process.stdout.write('\x1B[?25l'),
+    hide: () => {
+      process.stdout.write('\x1B[?25l');
+      cursorHidden = true;
+    },
 
     /**
      * Show the cursor
      */
 
-    show: () => process.stdout.write('\x1B[?25h'),
+    show: () => {
+      process.stdout.write('\x1B[?25h');
+      cursorHidden = false;
+    },
+
+    /**
+     * Check if the cursor is hidden
+     */
+
+    isHidden: () => cursorHidden,
   },
 
   /**
