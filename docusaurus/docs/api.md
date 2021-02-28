@@ -109,6 +109,8 @@ Log to the console with a timestamp
 
 -   `on` **[Boolean][19]** Truthy or falsy value that determines if the timestamp will be logged
 
+Returns **[Boolean][19]** 
+
 [1]: #animationcallback
 
 [2]: #parameters
