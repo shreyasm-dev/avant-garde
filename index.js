@@ -9,6 +9,7 @@ restoreCursor();
  * If the value returned is falsy, the animation will stop playing
  * @callback animationCallback
  * @param {int} iteration - Iteration number
+ * @param {string} frame - Frame printed
  * @returns {boolean}
  */
 
@@ -31,7 +32,7 @@ const console = {
     const interval = setInterval(() => {
       logUpdate(frames[iteration % frames.length]);
 
-      if (!callback(iteration)) {
+      if (!callback(iteration, frames[iteration % frames.length])) {
         clearInterval(interval);
         if (clear) {
           logUpdate.clear();
