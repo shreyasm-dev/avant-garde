@@ -12,6 +12,8 @@ restoreCursor();
  * @returns {boolean}
  */
 
+let timestamp = false;
+
 const console = {
 
   /**
@@ -75,7 +77,7 @@ const console = {
    */
 
   log: (...content) => {
-    process.stdout.write(`${content.join(' ')}\n`);
+    process.stdout.write(`${timestamp ? `\x1b[31m[${new Date().toJSON()}]\x1b[0m ` : ''}${content.join(' ')}\n`);
     return content.join(' '); // Functions return the value they are logging
   },
 
@@ -97,6 +99,16 @@ const console = {
   progress: (percentage = 100, character = '\u2588', columns = process.stdout.columns) => {
     process.stdout.write(`${character.repeat(columns * (percentage / 100))}\r`);
     return character.repeat(columns * (percentage / 100));
+  },
+
+  /**
+   * Log to the console with a timestamp
+   * @param {Boolean} on - Truthy or falsy value that determines if the timestamp will be logged
+   */
+
+  timestamp: (on) => {
+    timestamp = !!on;
+    return timestamp;
   },
 };
 
