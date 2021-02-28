@@ -74,6 +74,12 @@ const console = {
      */
 
     isHidden: () => cursorHidden,
+
+    /**
+     * Toggle the cursor
+     */
+
+    toggle: () => (cursorHidden ? console.cursor.show : console.cursor.hide)(),
   },
 
   /**
