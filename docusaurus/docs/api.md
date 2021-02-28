@@ -21,18 +21,20 @@ title: API
     -   [Parameters][13]
 -   [progress][14]
     -   [Parameters][15]
+-   [timestamp][16]
+    -   [Parameters][17]
 
 ## animationCallback
 
 If the value returned is falsy, the animation will stop playing
 
-Type: [Function][16]
+Type: [Function][18]
 
 ### Parameters
 
 -   `iteration` **int** Iteration number
 
-Returns **[boolean][17]** 
+Returns **[boolean][19]** 
 
 ## animation
 
@@ -40,11 +42,11 @@ Play an animation asynchronously
 
 ### Parameters
 
--   `frames` **[array][18]&lt;[string][19]>** Array of frames to play
--   `intervalTime` **[number][20]** How many milliseconds each frame should be shown for (optional, default `1`)
--   `callback` **[animationCallback][21]** Function to run after the current frame is shown (optional, default `()=>true`)
+-   `frames` **[array][20]&lt;[string][21]>** Array of frames to play
+-   `intervalTime` **[number][22]** How many milliseconds each frame should be shown for (optional, default `1`)
+-   `callback` **[animationCallback][23]** Function to run after the current frame is shown (optional, default `()=>true`)
 
-Returns **[number][20]** 
+Returns **[number][22]** 
 
 ## cursor
 
@@ -65,9 +67,9 @@ Pretty-print, highlight, and log some JSON to the console
 ### Parameters
 
 -   `json` **any** Content to convert to JSON and log
--   `indentation` **[number][20]** How many spaces should be used for indentation (optional, default `2`)
+-   `indentation` **[number][22]** How many spaces should be used for indentation (optional, default `2`)
 
-Returns **[string][19]** 
+Returns **[string][21]** 
 
 ## log
 
@@ -75,9 +77,9 @@ Log a string to the console
 
 ### Parameters
 
--   `content` **...[string][19]** The content to log to the console
+-   `content` **...[string][21]** The content to log to the console
 
-Returns **[string][19]** 
+Returns **[string][21]** 
 
 ## newline
 
@@ -85,7 +87,7 @@ Semantic way of printing a newline character to stdout
 
 ### Parameters
 
--   `repeat` **[number][20]** How many new lines should be printed (optional, default `1`)
+-   `repeat` **[number][22]** How many new lines should be printed (optional, default `1`)
 
 ## progress
 
@@ -93,11 +95,19 @@ Print a progress bar
 
 ### Parameters
 
--   `percentage` **[number][20]** Progress bar percentage (optional, default `100`)
--   `character` **[string][19]** Character used in progress bar (optional, default `'\u2588'`)
--   `columns` **[number][20]**  (optional, default `process.stdout.columns`)
+-   `percentage` **[number][22]** Progress bar percentage (optional, default `100`)
+-   `character` **[string][21]** Character used in progress bar (optional, default `'\u2588'`)
+-   `columns` **[number][22]**  (optional, default `process.stdout.columns`)
 
-Returns **[string][19]** 
+Returns **[string][21]** 
+
+## timestamp
+
+Log to the console with a timestamp
+
+### Parameters
+
+-   `on` **[Boolean][19]** Truthy or falsy value that determines if the timestamp will be logged
 
 [1]: #animationcallback
 
@@ -129,14 +139,18 @@ Returns **[string][19]**
 
 [15]: #parameters-5
 
-[16]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[16]: #timestamp
 
-[17]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[17]: #parameters-6
 
-[18]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[18]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
 
-[19]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[19]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
-[20]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[20]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 
-[21]: #animationcallback
+[21]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[22]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+[23]: #animationcallback
