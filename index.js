@@ -104,6 +104,7 @@ const console = {
   /**
    * Log to the console with a timestamp
    * @param {Boolean} on - Truthy or falsy value that determines if the timestamp will be logged
+   * @returns {Boolean}
    */
 
   timestamp: (on) => {
