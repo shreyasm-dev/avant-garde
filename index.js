@@ -8,7 +8,7 @@ restoreCursor();
 /**
  * If the value returned is falsy, the animation will stop playing
  * @callback animationCallback
- * @param {int} iteration - Iteration number
+ * @param {number} iteration - Iteration number
  * @param {string} frame - Frame printed
  * @returns {boolean}
  */
