@@ -34,10 +34,10 @@ Type: [Function][20]
 
 ### Parameters
 
--   `iteration` **int** Iteration number
--   `frame` **[string][21]** Frame printed
+-   `iteration` **[number][21]** Iteration number
+-   `frame` **[string][22]** Frame printed
 
-Returns **[boolean][22]** 
+Returns **[boolean][23]** 
 
 ## animation
 
@@ -45,12 +45,12 @@ Play an animation asynchronously
 
 ### Parameters
 
--   `frames` **[array][23]&lt;[string][21]>** Array of frames to play
--   `intervalTime` **[number][24]** How many milliseconds each frame should be shown for (optional, default `1`)
+-   `frames` **[array][24]&lt;[string][22]>** Array of frames to play
+-   `intervalTime` **[number][21]** How many milliseconds each frame should be shown for (optional, default `1`)
 -   `callback` **[animationCallback][25]** Function to run after the current frame is shown (optional, default `()=>true`)
--   `clear` **[boolean][22]** Clear the animation after it's done playing (optional, default `false`)
+-   `clear` **[boolean][23]** Clear the animation after it's done playing (optional, default `false`)
 
-Returns **[number][24]** 
+Returns **[number][21]** 
 
 ## cursor
 
@@ -68,7 +68,7 @@ Show the cursor
 
 Check if the cursor is hidden
 
-Returns **[boolean][22]** 
+Returns **[boolean][23]** 
 
 ### toggle
 
@@ -81,9 +81,9 @@ Pretty-print, highlight, and log some JSON to the console
 ### Parameters
 
 -   `json` **any** Content to convert to JSON and log
--   `indentation` **[number][24]** How many spaces should be used for indentation (optional, default `2`)
+-   `indentation` **[number][21]** How many spaces should be used for indentation (optional, default `2`)
 
-Returns **[string][21]** 
+Returns **[string][22]** 
 
 ## log
 
@@ -91,9 +91,9 @@ Log a string to the console
 
 ### Parameters
 
--   `content` **...[string][21]** The content to log to the console
+-   `content` **...[string][22]** The content to log to the console
 
-Returns **[string][21]** 
+Returns **[string][22]** 
 
 ## newline
 
@@ -101,7 +101,7 @@ Semantic way of printing a newline character to stdout
 
 ### Parameters
 
--   `repeat` **[number][24]** How many new lines should be printed (optional, default `1`)
+-   `repeat` **[number][21]** How many new lines should be printed (optional, default `1`)
 
 ## progress
 
@@ -109,11 +109,11 @@ Print a progress bar
 
 ### Parameters
 
--   `percentage` **[number][24]** Progress bar percentage (optional, default `100`)
--   `character` **[string][21]** Character used in progress bar (optional, default `'\u2588'`)
--   `columns` **[number][24]**  (optional, default `process.stdout.columns`)
+-   `percentage` **[number][21]** Progress bar percentage (optional, default `100`)
+-   `character` **[string][22]** Character used in progress bar (optional, default `'\u2588'`)
+-   `columns` **[number][21]**  (optional, default `process.stdout.columns`)
 
-Returns **[string][21]** 
+Returns **[string][22]** 
 
 ## timestamp
 
@@ -121,9 +121,9 @@ Log to the console with a timestamp
 
 ### Parameters
 
--   `on` **[boolean][22]** Truthy or falsy value that determines if the timestamp will be logged
+-   `on` **[boolean][23]** Truthy or falsy value that determines if the timestamp will be logged
 
-Returns **[boolean][22]** 
+Returns **[boolean][23]** 
 
 [1]: #animationcallback
 
@@ -165,12 +165,12 @@ Returns **[boolean][22]**
 
 [20]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
 
-[21]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[21]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[22]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[22]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
-[23]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[23]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
-[24]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[24]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 [25]: #animationcallback
