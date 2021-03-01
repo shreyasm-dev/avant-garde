@@ -42,6 +42,22 @@ console.cursor.hide(); // Hide the cursor
 console.cursor.show(); // Show the cursor
 ```
 
+#### `console.cursor.isHidden()`
+
+```javascript
+console.log(console.cursor.isHidden()); // false
+console.cursor.hide();
+console.log(console.cursor.isHidden()); // true
+```
+
+#### `console.cursor.toggle()`
+
+```javascript
+console.log(console.cursor.isHidden()); // false
+console.cursor.toggle(); // Toggle the cursor
+console.log(console.cursor.isHidden()); // true
+```
+
 ### `console.json`
 
 ```javascript
@@ -81,7 +97,7 @@ console.progress(
 console.newline(); // A new line has to printed later to avoid the progress bar being erased
 ```
 
-### `console.timestamp`
+### `console.timestamp()`
 
 ```javascript
 console.timestamp(true);
