@@ -71,6 +71,7 @@ const console = {
 
     /**
      * Check if the cursor is hidden
+     * @returns {boolean}
      */
 
     isHidden: () => cursorHidden,
