@@ -68,6 +68,8 @@ Show the cursor
 
 Check if the cursor is hidden
 
+Returns **[boolean][22]** 
+
 ### toggle
 
 Toggle the cursor
