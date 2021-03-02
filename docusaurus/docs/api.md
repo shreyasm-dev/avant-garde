@@ -10,38 +10,40 @@ title: API
     -   [Parameters][2]
 -   [animation][3]
     -   [Parameters][4]
--   [cursor][5]
-    -   [hide][6]
-    -   [show][7]
-    -   [isHidden][8]
-    -   [toggle][9]
--   [debug][10]
-    -   [Parameters][11]
--   [error][12]
+-   [count][5]
+    -   [Parameters][6]
+-   [cursor][7]
+    -   [hide][8]
+    -   [show][9]
+    -   [isHidden][10]
+    -   [toggle][11]
+-   [debug][12]
     -   [Parameters][13]
--   [json][14]
+-   [error][14]
     -   [Parameters][15]
--   [log][16]
+-   [json][16]
     -   [Parameters][17]
--   [newline][18]
+-   [log][18]
     -   [Parameters][19]
--   [progress][20]
+-   [newline][20]
     -   [Parameters][21]
--   [timestamp][22]
+-   [progress][22]
     -   [Parameters][23]
+-   [timestamp][24]
+    -   [Parameters][25]
 
 ## animationCallback
 
 If the value returned is falsy, the animation will stop playing
 
-Type: [Function][24]
+Type: [Function][26]
 
 ### Parameters
 
--   `iteration` **[number][25]** Iteration number
--   `frame` **[string][26]** Frame printed
+-   `iteration` **[number][27]** Iteration number
+-   `frame` **[string][28]** Frame printed
 
-Returns **[boolean][27]** 
+Returns **[boolean][29]** 
 
 ## animation
 
@@ -49,12 +51,20 @@ Play an animation asynchronously
 
 ### Parameters
 
--   `frames` **[array][28]&lt;[string][26]>** Array of frames to play
--   `intervalTime` **[number][25]** How many milliseconds each frame should be shown for (optional, default `1`)
--   `callback` **[animationCallback][29]** Function to run after the current frame is shown (optional, default `()=>true`)
--   `clear` **[boolean][27]** Clear the animation after it's done playing (optional, default `false`)
+-   `frames` **[array][30]&lt;[string][28]>** Array of frames to play
+-   `intervalTime` **[number][27]** How many milliseconds each frame should be shown for (optional, default `1`)
+-   `callback` **[animationCallback][31]** Function to run after the current frame is shown (optional, default `()=>true`)
+-   `clear` **[boolean][29]** Clear the animation after it's done playing (optional, default `false`)
 
-Returns **[number][25]** 
+Returns **[number][27]** 
+
+## count
+
+Log the number of times the label has been counted
+
+### Parameters
+
+-   `label` **[string][28]**  (optional, default `'default'`)
 
 ## cursor
 
@@ -72,7 +82,7 @@ Show the cursor
 
 Check if the cursor is hidden
 
-Returns **[boolean][27]** 
+Returns **[boolean][29]** 
 
 ### toggle
 
@@ -84,7 +94,7 @@ Print a debugging message to the console
 
 ### Parameters
 
--   `content` **...[string][26]** The content to be printed
+-   `content` **...[string][28]** The content to be printed
 
 ## error
 
@@ -92,7 +102,7 @@ Print an error to the console
 
 ### Parameters
 
--   `content` **...[string][26]** The content to be shown as the error
+-   `content` **...[string][28]** The content to be shown as the error
 
 ## json
 
@@ -101,9 +111,9 @@ Pretty-print, highlight, and log some JSON to the console
 ### Parameters
 
 -   `json` **any** Content to convert to JSON and log
--   `indentation` **[number][25]** How many spaces should be used for indentation (optional, default `2`)
+-   `indentation` **[number][27]** How many spaces should be used for indentation (optional, default `2`)
 
-Returns **[string][26]** 
+Returns **[string][28]** 
 
 ## log
 
@@ -111,9 +121,9 @@ Log a string to the console
 
 ### Parameters
 
--   `content` **...[string][26]** The content to log to the console
+-   `content` **...[string][28]** The content to log to the console
 
-Returns **[string][26]** 
+Returns **[string][28]** 
 
 ## newline
 
@@ -121,7 +131,7 @@ Semantic way of printing a newline character to stdout
 
 ### Parameters
 
--   `repeat` **[number][25]** How many new lines should be printed (optional, default `1`)
+-   `repeat` **[number][27]** How many new lines should be printed (optional, default `1`)
 
 ## progress
 
@@ -129,11 +139,11 @@ Print a progress bar
 
 ### Parameters
 
--   `percentage` **[number][25]** Progress bar percentage (optional, default `100`)
--   `character` **[string][26]** Character used in progress bar (optional, default `'\u2588'`)
--   `columns` **[number][25]**  (optional, default `process.stdout.columns`)
+-   `percentage` **[number][27]** Progress bar percentage (optional, default `100`)
+-   `character` **[string][28]** Character used in progress bar (optional, default `'\u2588'`)
+-   `columns` **[number][27]**  (optional, default `process.stdout.columns`)
 
-Returns **[string][26]** 
+Returns **[string][28]** 
 
 ## timestamp
 
@@ -141,9 +151,9 @@ Log to the console with a timestamp
 
 ### Parameters
 
--   `on` **[boolean][27]** Truthy or falsy value that determines if the timestamp will be logged
+-   `on` **[boolean][29]** Truthy or falsy value that determines if the timestamp will be logged
 
-Returns **[boolean][27]** 
+Returns **[boolean][29]** 
 
 [1]: #animationcallback
 
@@ -153,52 +163,56 @@ Returns **[boolean][27]**
 
 [4]: #parameters-1
 
-[5]: #cursor
+[5]: #count
 
-[6]: #hide
+[6]: #parameters-2
 
-[7]: #show
+[7]: #cursor
 
-[8]: #ishidden
+[8]: #hide
 
-[9]: #toggle
+[9]: #show
 
-[10]: #debug
+[10]: #ishidden
 
-[11]: #parameters-2
+[11]: #toggle
 
-[12]: #error
+[12]: #debug
 
 [13]: #parameters-3
 
-[14]: #json
+[14]: #error
 
 [15]: #parameters-4
 
-[16]: #log
+[16]: #json
 
 [17]: #parameters-5
 
-[18]: #newline
+[18]: #log
 
 [19]: #parameters-6
 
-[20]: #progress
+[20]: #newline
 
 [21]: #parameters-7
 
-[22]: #timestamp
+[22]: #progress
 
 [23]: #parameters-8
 
-[24]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[24]: #timestamp
 
-[25]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[25]: #parameters-9
 
-[26]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[26]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
 
-[27]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[27]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[28]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[28]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
-[29]: #animationcallback
+[29]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[30]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[31]: #animationcallback
