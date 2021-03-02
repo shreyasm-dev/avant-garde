@@ -3,7 +3,7 @@ id: examples
 title: Examples
 ---
 
-### `console.animation`
+### `console.animatio()`
 
 ```javascript
 console.animation( // Play an animation
@@ -58,7 +58,21 @@ console.cursor.toggle(); // Toggle the cursor
 console.log(console.cursor.isHidden()); // true
 ```
 
-### `console.json`
+### `console.debug()`
+
+```javascript
+// Same as regular console.debug except for the fact that the function returns what it logs
+console.debug('Something', 'Something else');
+```
+
+### `console.error()`
+
+```javascript
+// Same as regular console.error except for the fact that the function returns what it logs
+console.debug('Error: ', 'Something went wrong');
+```
+
+### `console.json()`
 
 ```javascript
 console.json( // Pretty-print and syntax highlight some JSON
@@ -71,7 +85,7 @@ console.json( // Pretty-print and syntax highlight some JSON
 );
 ```
 
-### `console.log`
+### `console.log()`
 
 ```javascript
 // Same as regular console.log except for the fact that the function returns what it logs
