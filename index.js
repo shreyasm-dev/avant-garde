@@ -50,6 +50,7 @@ const console = {
   /**
    * Log the number of times the label has been counted
    * @param {string} [label='default']
+   * @returns {number}
    */
 
   count: (label = 'default') => {
@@ -101,6 +102,7 @@ const console = {
   /**
    * Print a debugging message to the console
    * @param  {...string} content - The content to be printed
+   * @returns {string}
    */
 
   debug: (...content) => {
@@ -111,6 +113,7 @@ const console = {
   /**
    * Print an error to the console
    * @param  {...string} content - The content to be shown as the error
+   * @returns {string}
    */
 
   error: (...content) => {
