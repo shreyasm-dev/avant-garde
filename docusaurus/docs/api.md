@@ -15,29 +15,31 @@ title: API
     -   [show][7]
     -   [isHidden][8]
     -   [toggle][9]
--   [json][10]
+-   [error][10]
     -   [Parameters][11]
--   [log][12]
+-   [json][12]
     -   [Parameters][13]
--   [newline][14]
+-   [log][14]
     -   [Parameters][15]
--   [progress][16]
+-   [newline][16]
     -   [Parameters][17]
--   [timestamp][18]
+-   [progress][18]
     -   [Parameters][19]
+-   [timestamp][20]
+    -   [Parameters][21]
 
 ## animationCallback
 
 If the value returned is falsy, the animation will stop playing
 
-Type: [Function][20]
+Type: [Function][22]
 
 ### Parameters
 
--   `iteration` **[number][21]** Iteration number
--   `frame` **[string][22]** Frame printed
+-   `iteration` **[number][23]** Iteration number
+-   `frame` **[string][24]** Frame printed
 
-Returns **[boolean][23]** 
+Returns **[boolean][25]** 
 
 ## animation
 
@@ -45,12 +47,12 @@ Play an animation asynchronously
 
 ### Parameters
 
--   `frames` **[array][24]&lt;[string][22]>** Array of frames to play
--   `intervalTime` **[number][21]** How many milliseconds each frame should be shown for (optional, default `1`)
--   `callback` **[animationCallback][25]** Function to run after the current frame is shown (optional, default `()=>true`)
--   `clear` **[boolean][23]** Clear the animation after it's done playing (optional, default `false`)
+-   `frames` **[array][26]&lt;[string][24]>** Array of frames to play
+-   `intervalTime` **[number][23]** How many milliseconds each frame should be shown for (optional, default `1`)
+-   `callback` **[animationCallback][27]** Function to run after the current frame is shown (optional, default `()=>true`)
+-   `clear` **[boolean][25]** Clear the animation after it's done playing (optional, default `false`)
 
-Returns **[number][21]** 
+Returns **[number][23]** 
 
 ## cursor
 
@@ -68,11 +70,19 @@ Show the cursor
 
 Check if the cursor is hidden
 
-Returns **[boolean][23]** 
+Returns **[boolean][25]** 
 
 ### toggle
 
 Toggle the cursor
+
+## error
+
+Print an error to the console
+
+### Parameters
+
+-   `content` **...[string][24]** The content to be shown as the error
 
 ## json
 
@@ -81,9 +91,9 @@ Pretty-print, highlight, and log some JSON to the console
 ### Parameters
 
 -   `json` **any** Content to convert to JSON and log
--   `indentation` **[number][21]** How many spaces should be used for indentation (optional, default `2`)
+-   `indentation` **[number][23]** How many spaces should be used for indentation (optional, default `2`)
 
-Returns **[string][22]** 
+Returns **[string][24]** 
 
 ## log
 
@@ -91,9 +101,9 @@ Log a string to the console
 
 ### Parameters
 
--   `content` **...[string][22]** The content to log to the console
+-   `content` **...[string][24]** The content to log to the console
 
-Returns **[string][22]** 
+Returns **[string][24]** 
 
 ## newline
 
@@ -101,7 +111,7 @@ Semantic way of printing a newline character to stdout
 
 ### Parameters
 
--   `repeat` **[number][21]** How many new lines should be printed (optional, default `1`)
+-   `repeat` **[number][23]** How many new lines should be printed (optional, default `1`)
 
 ## progress
 
@@ -109,11 +119,11 @@ Print a progress bar
 
 ### Parameters
 
--   `percentage` **[number][21]** Progress bar percentage (optional, default `100`)
--   `character` **[string][22]** Character used in progress bar (optional, default `'\u2588'`)
--   `columns` **[number][21]**  (optional, default `process.stdout.columns`)
+-   `percentage` **[number][23]** Progress bar percentage (optional, default `100`)
+-   `character` **[string][24]** Character used in progress bar (optional, default `'\u2588'`)
+-   `columns` **[number][23]**  (optional, default `process.stdout.columns`)
 
-Returns **[string][22]** 
+Returns **[string][24]** 
 
 ## timestamp
 
@@ -121,9 +131,9 @@ Log to the console with a timestamp
 
 ### Parameters
 
--   `on` **[boolean][23]** Truthy or falsy value that determines if the timestamp will be logged
+-   `on` **[boolean][25]** Truthy or falsy value that determines if the timestamp will be logged
 
-Returns **[boolean][23]** 
+Returns **[boolean][25]** 
 
 [1]: #animationcallback
 
@@ -143,34 +153,38 @@ Returns **[boolean][23]**
 
 [9]: #toggle
 
-[10]: #json
+[10]: #error
 
 [11]: #parameters-2
 
-[12]: #log
+[12]: #json
 
 [13]: #parameters-3
 
-[14]: #newline
+[14]: #log
 
 [15]: #parameters-4
 
-[16]: #progress
+[16]: #newline
 
 [17]: #parameters-5
 
-[18]: #timestamp
+[18]: #progress
 
 [19]: #parameters-6
 
-[20]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[20]: #timestamp
 
-[21]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[21]: #parameters-7
 
-[22]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[22]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
 
-[23]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[23]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[24]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[24]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
-[25]: #animationcallback
+[25]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[26]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[27]: #animationcallback
