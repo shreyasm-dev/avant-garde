@@ -122,7 +122,7 @@ const console = {
    */
 
   progress: (percentage = 100, character = '\u2588', columns = process.stdout.columns) => {
-    process.stdout.write(`${character.repeat(columns * (percentage / 100))}\r`);
+    logUpdate(`${character.repeat(columns * (percentage / 100))}`);
     return character.repeat(columns * (percentage / 100));
   },
 
