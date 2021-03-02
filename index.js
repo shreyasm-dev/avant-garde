@@ -84,6 +84,16 @@ const console = {
   },
 
   /**
+   * Print a debugging message to the console
+   * @param  {...string} content - The content to be printed
+   */
+
+  debug: (...content) => {
+    console.log(`\x1B[36m${content.join(' ')}\x1B[36m`);
+    return content.join(' ');
+  },
+
+  /**
    * Print an error to the console
    * @param  {...string} content - The content to be shown as the error
    */
