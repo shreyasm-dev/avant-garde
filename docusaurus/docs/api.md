@@ -38,6 +38,8 @@ Log the number of times the label has been counted
 
 -   `label` **[string][3]**  (optional, default `'default'`)
 
+Returns **[number][2]** 
+
 ## cursor
 
 Cursor control
@@ -68,6 +70,8 @@ Print a debugging message to the console
 
 -   `content` **...[string][3]** The content to be printed
 
+Returns **[string][3]** 
+
 ## error
 
 Print an error to the console
@@ -75,6 +79,8 @@ Print an error to the console
 ### Parameters
 
 -   `content` **...[string][3]** The content to be shown as the error
+
+Returns **[string][3]** 
 
 ## json
 
