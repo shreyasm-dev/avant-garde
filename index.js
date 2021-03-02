@@ -21,9 +21,9 @@ const console = {
   /**
    * Play an animation asynchronously
    * @param {array.<string>} frames - Array of frames to play
-   * @param {number} intervalTime - How many milliseconds each frame should be shown for
-   * @param {animationCallback} callback - Function to run after the current frame is shown
-   * @param {boolean} clear - Clear the animation after it's done playing
+   * @param {number} [intervalTime=1] - How many milliseconds each frame should be shown for
+   * @param {animationCallback} [callback=()=>true] - Function to run after the current frame is shown
+   * @param {boolean} [clear=false] - Clear the animation after it's done playing
    * @returns {number}
    */
 
