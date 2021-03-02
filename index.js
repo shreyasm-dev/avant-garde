@@ -84,6 +84,16 @@ const console = {
   },
 
   /**
+   * Print an error to the console
+   * @param  {...string} content - The content to be shown as the error
+   */
+
+  error: (...content) => {
+    console.log(`\x1B[31m${content.join(' ')}\x1B[31m`);
+    return content.join(' ');
+  },
+
+  /**
    * Pretty-print, highlight, and log some JSON to the console
    * @param {*} json - Content to convert to JSON and log
    * @param {number} [indentation=2] - How many spaces should be used for indentation
