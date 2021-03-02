@@ -15,6 +15,7 @@ restoreCursor();
 
 let timestamp = false;
 let cursorHidden = false;
+const count = {}; // Where the console.count values are stored
 
 const console = {
 
@@ -44,6 +45,20 @@ const console = {
     }, intervalTime);
 
     return interval;
+  },
+
+  /**
+   * Log the number of times the label has been counted
+   * @param {string} [label='default']
+   */
+
+  count: (label = 'default') => {
+    if (!count[label]) {
+      count[label] = 0;
+    }
+
+    console.log(`${label}: ${++count[label]}`);
+    return count[label];
   },
 
   /**
