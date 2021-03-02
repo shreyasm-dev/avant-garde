@@ -93,8 +93,6 @@ console.progress(
   '=', // Character used in progress bar
   100, // Number of columns the progress bar should take at 100% (default is full width of the terminal)
 );
-
-console.newline(); // A new line has to printed later to avoid the progress bar being erased
 ```
 
 ### `console.timestamp()`
