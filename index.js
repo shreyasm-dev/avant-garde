@@ -48,6 +48,12 @@ const console = {
   },
 
   /**
+   * Clear the console
+   */
+
+  clear: () => process.stdout.write('\x1B[2J\x1B[u'),
+
+  /**
    * Log the number of times the label has been counted
    * @param {string} [label='default']
    * @returns {number}
