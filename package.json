@@ -34,7 +34,8 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prefer-arrow": "^1.2.3",
-    "mocha": "^8.3.0"
+    "mocha": "^8.3.0",
+    "mute": "^2.0.6"
   },
   "dependencies": {
     "core-js": "^3.9.0",
