@@ -9,7 +9,7 @@ describe('console#animation', () => {
       printedFrames.push(frame);
 
       if (iteration === 2) { // Last frame
-        assert.deepEqual(frames, printedFrames);
+        assert.deepEqual(printedFrames, frames);
       }
 
       return iteration !== 2;
