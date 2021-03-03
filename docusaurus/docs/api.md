@@ -30,6 +30,10 @@ Play an animation asynchronously
 
 Returns **[number][2]** 
 
+## clear
+
+Clear the console
+
 ## count
 
 Log the number of times the label has been counted
