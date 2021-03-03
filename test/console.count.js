@@ -2,7 +2,7 @@ import { assert } from 'chai';
 import mute from 'mute';
 import console from '../index.js'; // eslint-disable-line import/extensions
 
-describe('console#count', async () => {
+describe('console#count', () => {
   it('should count a label', () => {
     const unmute = mute();
 
