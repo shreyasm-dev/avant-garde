@@ -1,6 +1,6 @@
 {
   "name": "avant-garde",
-  "version": "0.12.1",
+  "version": "0.12.2",
   "description": "A newer, better, console",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,14 @@
     "avant-garde",
     "avant",
     "garde",
-    "console"
+    "console",
+    "log",
+    "logging",
+    "debug",
+    "cli",
+    "animation",
+    "progress-bar",
+    "debugging"
   ],
   "author": "shreyasm-dev",
   "license": "MIT",
