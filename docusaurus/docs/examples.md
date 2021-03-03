@@ -3,7 +3,7 @@ id: examples
 title: Examples
 ---
 
-### `console.animatio()`
+### `console.animation()`
 
 ```javascript
 console.animation( // Play an animation
@@ -25,6 +25,13 @@ console.animation( // Play an animation
   // This will be called after every frame is shown
   (iteration) => iteration !== 10, // If a falsy value is returned, the animation will stop
 );
+```
+
+### `console.clear()`
+
+```javascript
+console.log('This text will only be shown for 5 seconds before the console is cleared');
+setTimeout(console.clear, 5000);
 ```
 
 ### `console.cursor`
