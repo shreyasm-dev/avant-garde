@@ -128,6 +128,16 @@ const console = {
   },
 
   /**
+   * Print an informational message to the console
+   * @param  {...string} content
+   */
+
+  info: (...content) => {
+    console.log(`\x1B[34m${content.join(' ')}\x1B[34m`);
+    return content.join(' ');
+  },
+
+  /**
    * Pretty-print, highlight, and log some JSON to the console
    * @param {*} json - Content to convert to JSON and log
    * @param {number} [indentation=2] - How many spaces should be used for indentation
