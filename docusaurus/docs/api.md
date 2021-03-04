@@ -86,6 +86,14 @@ Print an error to the console
 
 Returns **[string][3]** 
 
+## info
+
+Print an informational message to the console
+
+### Parameters
+
+-   `content` **...[string][3]** 
+
 ## json
 
 Pretty-print, highlight, and log some JSON to the console
