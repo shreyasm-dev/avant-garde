@@ -6,7 +6,7 @@ describe('console#info', () => {
   it('should print dark blue text', async () => {
     const promise = hookStd.stdout((output, unhook) => {
       unhook();
-      assert.strictEqual(output, '\u001b[34mHello, World!\u001b[34m\n');
+      assert.strictEqual(output, '\u001b[36mHello, World!\u001b[36m\n');
     });
 
     console.info('Hello,', 'World!');
