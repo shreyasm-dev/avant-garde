@@ -112,7 +112,7 @@ const console = {
    */
 
   debug: (...content) => {
-    console.log(`\x1B[36m${content.join(' ')}\x1B[36m`);
+    console.log(`\x1B[34m${content.join(' ')}\x1B[34m`);
     return content.join(' ');
   },
 
@@ -133,7 +133,7 @@ const console = {
    */
 
   info: (...content) => {
-    console.log(`\x1B[34m${content.join(' ')}\x1B[34m`);
+    console.log(`\x1B[36m${content.join(' ')}\x1B[36m`);
     return content.join(' ');
   },
 
