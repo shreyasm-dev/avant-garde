@@ -76,7 +76,14 @@ console.debug('Something', 'Something else');
 
 ```javascript
 // Same as regular console.error except for the fact that the function returns what it logs
-console.debug('Error: ', 'Something went wrong');
+console.error('Error: ', 'Something went wrong');
+```
+
+### `console.info()`
+
+```javascript
+// Same as regular console.info except for the fact that the function returns what it logs
+console.info('An informational', 'message');
 ```
 
 ### `console.json()`
